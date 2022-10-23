@@ -3,4 +3,10 @@
 
 ### How to build html files with multiversions
 ```
-/eidetech.github.io/docs$ sphinx-multiversion source  build/html
+(.venv) marcus@ubuntu: .../eidetech.github.io/docs$ sphinx-multiversion source  build/html
+```
+### Important before adding/removing packages
+Go into the virtual environment
+```
+marcus@ubuntu: .../eidetech.github.io/docs$ source .venv/bin/activate
+```
