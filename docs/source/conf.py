@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 project = 'eidedocs'
 copyright = '2022, Marcus Eide'
 author = 'Marcus Eide'
-release = '0.1'
+release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 
