@@ -37,7 +37,10 @@ extensions = [
     "nbsphinx",
     "myst_parser",
     "sphinx_copybutton",
+    "sphinxcontrib.tikz",
 ]
+tikz_tikzlibraries = 'arrows, calc, shapes.geometric, circuitikz'
+tikz_proc_suite = "GhostScript"
 
 # use language set by highlight directive if no language is set by role
 inline_highlight_respect_highlight = False
