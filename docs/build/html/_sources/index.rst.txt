@@ -8,18 +8,10 @@ eidedocs
 
 .. toctree::
    :maxdepth: 3
-   :caption: Contents:
+   :caption: Table of Contents:
 
    math/math
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   electrical/electrical
 
 .. math::
     y = a \cdot x + b
