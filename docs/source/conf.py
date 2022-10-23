@@ -38,6 +38,7 @@ extensions = [
     "myst_parser",
     "sphinx_copybutton",
     "sphinxcontrib.tikz",
+    "sphinx_multiversion",
 ]
 tikz_tikzlibraries = 'arrows, calc, shapes.geometric, circuitikz'
 tikz_proc_suite = "GhostScript"
@@ -49,8 +50,15 @@ inline_highlight_respect_highlight = False
 inline_highlight_literals = False
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = [
+    "_templates",
+]
 
+html_sidebars = {
+    '**': [
+        'versioning.html',
+    ],
+}
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
