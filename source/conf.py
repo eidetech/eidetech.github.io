@@ -22,7 +22,7 @@ copyright = '2023, Marcus Eide'
 author = 'Marcus Eide'
 
 # The full version, including alpha/beta/rc tags
-release = '2023'
+release = 'alpha'
 
 
 # -- General configuration ---------------------------------------------------
