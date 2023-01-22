@@ -1,15 +1,9 @@
-Basic Electrical
+Linear Algebra
 ################
 
-Ohm's law
-*********
-.. math:: U = R \cdot I
+Solve matrices in Matlab
+************************
 
-Resistors in series
-*******************
-.. math:: R_s = R_1 + R_2 + ... + R_n
+.. code-block::
 
-Resistors in parallel
-*********************
-.. math:: \frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_n}
-.. math:: R_p = \left(\frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_n}\right)^{-1}
+    x = A\B

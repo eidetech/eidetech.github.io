@@ -6,3 +6,5 @@ Concert Industry
 
    linearray_theory
    subwoofer_theory
+   d_b_r1
+   d_b_arraycalc
