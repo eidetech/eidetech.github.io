@@ -5,3 +5,4 @@ Electrical
    :caption: Contents:
 
    basic
+   power

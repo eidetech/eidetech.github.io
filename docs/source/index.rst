@@ -8,7 +8,8 @@ eidedocs
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
-   electrical/electrical
+   pages/electrical/electrical
+   pages/concert_industry/concert_industry
