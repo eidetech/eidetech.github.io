@@ -27,7 +27,8 @@ author = 'Marcus Eide'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.githubpages',
+extensions = ['sphinx.ext.imgmath',
+	      'sphinx.ext.githubpages',
 ]
 
 html_baseurl = '../build/html/'
