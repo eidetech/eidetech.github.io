@@ -13,3 +13,4 @@ eidedocs
 
    pages/electrical/electrical
    pages/concert_industry/concert_industry
+   pages/math/math

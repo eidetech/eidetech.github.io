@@ -1,7 +1,7 @@
-Electrical
-==========
+Math
+====
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
 
-   basic
+   linear_algebra
