@@ -1,1 +1,0 @@
-# eidetech.github.io

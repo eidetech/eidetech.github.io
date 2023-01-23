@@ -45,7 +45,15 @@
 <li class="toctree-l2"><a class="reference internal" href="basic.html">1.1. Basic Electrical</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">1.2. Power</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#single-phase-power">1.2.1. Single Phase Power</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#three-phase-power">1.2.2. Three Phase Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#three-phase-power">1.2.2. Three Phase Power</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#calculation-examples">1.2.2.1. Calculation Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#norwegian-earthing-arrangements">1.2.3. Norwegian Earthing Arrangements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#it-network">1.2.3.1. IT Network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tn-network">1.2.3.2. TN Network</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -95,7 +103,43 @@
 </div><p>PF less than 1:</p>
 <div class="math">
 <p><img src="../../_images/math/582ca0dfe346c2e607535ce04d2b548c33ded3e0.png" alt="P = U \cdot I \cdot \sqrt{3} \cdot PF"/></p>
+</div><p>Another approach is to find the phase voltage (using the line to line voltage), and then finding the power with 3 times the phase voltage (assuming PF = 1):</p>
+<div class="math">
+<p><img src="../../_images/math/d3fa63c591c048c177161af88c19243ece465c39.png" alt="\begin{align*}
+U_{phase} &amp;= \frac{U_{line-line}}{\sqrt{3}}\\
+P &amp;= 3 \cdot U_{phase} \cdot I
+\end{align*}"/></p>
+</div><section id="calculation-examples">
+<h3><span class="section-number">1.2.2.1. </span>Calculation Examples<a class="headerlink" href="#calculation-examples" title="Permalink to this heading"></a></h3>
+<p>Below are examples of calculating three phase power with 400V line to line voltage and 63A of current (assuming PF = 1):</p>
+<section id="example-1">
+<h4><span class="section-number">1.2.2.1.1. </span>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading"></a></h4>
+<div class="math">
+<p><img src="../../_images/math/8f2c2796a0a81c196f7ef73bc9d058387e640de0.png" alt="\begin{align*}
+U_{phase} &amp;= \frac{U_{line-line}}{\sqrt{3}} = \frac{400V}{\sqrt{3}} \approx 230V\\
+P &amp;= 3 \cdot 230V \cdot 63A = 43647.68W \approx 43.7kW
+\end{align*}"/></p>
 </div></section>
+<section id="example-2">
+<h4><span class="section-number">1.2.2.1.2. </span>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading"></a></h4>
+<div class="math">
+<p><img src="../../_images/math/a69616d5088161a3a679fe34a6a5ff0d7f5fc28f.png" alt="\begin{align*}
+P &amp;= U \cdot I \cdot \sqrt{3} = 400V \cdot 63A \cdot \sqrt{3} = 43647.68W \approx 43.7kW
+\end{align*}"/></p>
+</div></section>
+</section>
+</section>
+<section id="norwegian-earthing-arrangements">
+<h2><span class="section-number">1.2.3. </span>Norwegian Earthing Arrangements<a class="headerlink" href="#norwegian-earthing-arrangements" title="Permalink to this heading"></a></h2>
+<section id="it-network">
+<h3><span class="section-number">1.2.3.1. </span>IT Network<a class="headerlink" href="#it-network" title="Permalink to this heading"></a></h3>
+<img alt="../../_images/IT.png" class="align-center" src="../../_images/IT.png" />
+</section>
+<section id="tn-network">
+<h3><span class="section-number">1.2.3.2. </span>TN Network<a class="headerlink" href="#tn-network" title="Permalink to this heading"></a></h3>
+<img alt="../../_images/TN.png" class="align-center" src="../../_images/TN.png" />
+</section>
+</section>
 </section>
 
 
