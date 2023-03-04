@@ -6,3 +6,4 @@ Electrical
 
    basic
    power
+   pcb

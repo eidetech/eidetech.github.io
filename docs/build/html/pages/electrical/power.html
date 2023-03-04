@@ -17,10 +17,11 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Concert Industry" href="../concert_industry/concert_industry.html" />
+    <link rel="next" title="1.3. PCB Design" href="pcb.html" />
     <link rel="prev" title="1.1. Basic Electrical" href="basic.html" /> 
 </head>
 
@@ -56,6 +57,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="pcb.html">1.3. PCB Design</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../concert_industry/concert_industry.html">2. Concert Industry</a></li>
@@ -91,42 +93,39 @@
 <h1><span class="section-number">1.2. </span>Power<a class="headerlink" href="#power" title="Permalink to this heading"></a></h1>
 <section id="single-phase-power">
 <h2><span class="section-number">1.2.1. </span>Single Phase Power<a class="headerlink" href="#single-phase-power" title="Permalink to this heading"></a></h2>
-<div class="math">
-<p><img src="../../_images/math/3894a6c87e975ab32432a8764ea86cd1148efb8d.png" alt="P = U \cdot I"/></p>
-</div></section>
+<div class="math notranslate nohighlight">
+\[P = U \cdot I\]</div>
+</section>
 <section id="three-phase-power">
 <h2><span class="section-number">1.2.2. </span>Three Phase Power<a class="headerlink" href="#three-phase-power" title="Permalink to this heading"></a></h2>
 <p>Power Factor (PF) needs to be accounted for:</p>
 <p>PF = 1:</p>
-<div class="math">
-<p><img src="../../_images/math/27bf2f40fd2827889612fadc4cd58de29988c010.png" alt="P = U \cdot I \cdot \sqrt{3}"/></p>
-</div><p>PF less than 1:</p>
-<div class="math">
-<p><img src="../../_images/math/582ca0dfe346c2e607535ce04d2b548c33ded3e0.png" alt="P = U \cdot I \cdot \sqrt{3} \cdot PF"/></p>
-</div><p>Another approach is to find the phase voltage (using the line to line voltage), and then finding the power with 3 times the phase voltage (assuming PF = 1):</p>
-<div class="math">
-<p><img src="../../_images/math/d3fa63c591c048c177161af88c19243ece465c39.png" alt="\begin{align*}
+<div class="math notranslate nohighlight">
+\[P = U \cdot I \cdot \sqrt{3}\]</div>
+<p>PF less than 1:</p>
+<div class="math notranslate nohighlight">
+\[P = U \cdot I \cdot \sqrt{3} \cdot PF\]</div>
+<p>Another approach is to find the phase voltage (using the line to line voltage), and then finding the power with 3 times the phase voltage (assuming PF = 1):</p>
+<div class="math notranslate nohighlight">
+\begin{align*}
 U_{phase} &amp;= \frac{U_{line-line}}{\sqrt{3}}\\
 P &amp;= 3 \cdot U_{phase} \cdot I
-\end{align*}"/></p>
-</div><section id="calculation-examples">
+\end{align*}</div><section id="calculation-examples">
 <h3><span class="section-number">1.2.2.1. </span>Calculation Examples<a class="headerlink" href="#calculation-examples" title="Permalink to this heading"></a></h3>
 <p>Below are examples of calculating three phase power with 400V line to line voltage and 63A of current (assuming PF = 1):</p>
 <section id="example-1">
 <h4><span class="section-number">1.2.2.1.1. </span>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading"></a></h4>
-<div class="math">
-<p><img src="../../_images/math/8f2c2796a0a81c196f7ef73bc9d058387e640de0.png" alt="\begin{align*}
+<div class="math notranslate nohighlight">
+\begin{align*}
 U_{phase} &amp;= \frac{U_{line-line}}{\sqrt{3}} = \frac{400V}{\sqrt{3}} \approx 230V\\
 P &amp;= 3 \cdot 230V \cdot 63A = 43647.68W \approx 43.7kW
-\end{align*}"/></p>
-</div></section>
+\end{align*}</div></section>
 <section id="example-2">
 <h4><span class="section-number">1.2.2.1.2. </span>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading"></a></h4>
-<div class="math">
-<p><img src="../../_images/math/a69616d5088161a3a679fe34a6a5ff0d7f5fc28f.png" alt="\begin{align*}
+<div class="math notranslate nohighlight">
+\begin{align*}
 P &amp;= U \cdot I \cdot \sqrt{3} = 400V \cdot 63A \cdot \sqrt{3} = 43647.68W \approx 43.7kW
-\end{align*}"/></p>
-</div></section>
+\end{align*}</div></section>
 </section>
 </section>
 <section id="norwegian-earthing-arrangements">
@@ -147,7 +146,7 @@ P &amp;= U \cdot I \cdot \sqrt{3} = 400V \cdot 63A \cdot \sqrt{3} = 43647.68W \a
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="basic.html" class="btn btn-neutral float-left" title="1.1. Basic Electrical" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../concert_industry/concert_industry.html" class="btn btn-neutral float-right" title="2. Concert Industry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pcb.html" class="btn btn-neutral float-right" title="1.3. PCB Design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
